@@ -10,6 +10,15 @@ public class Personne {
     int id;
     String nom, prenom, mail, mdp;
 
+    public Personne(String email, String password) {
+        this.mail = email;
+        this.mdp = password;
+    }
+
+    public Personne() {
+
+    }
+
     public String getNom() {
         return nom;
     }

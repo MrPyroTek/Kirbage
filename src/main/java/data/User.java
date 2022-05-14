@@ -10,6 +10,14 @@ public class User extends Personne {
     int id;
     List<Panier> commandes;
 
+    public User() {
+        super();
+    }
+
+    public User(String email, String password) {
+        super(email, password);
+    }
+
     public void addCommande(Panier p){
         commandes.add(p);
     }
