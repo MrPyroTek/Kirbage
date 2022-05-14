@@ -8,7 +8,7 @@ import java.util.List;
 public interface PanierRepository extends JpaRepository<Integer, Long> {
 
     List<Panier> findAllPaniersByVille(String x);
-
+    List<Panier> findAllPanierByprix(Integer x);
 
 
 }
