@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @SpringBootApplication
@@ -17,6 +18,11 @@ public class Application {
 	@GetMapping("/Login")
 	public String Login() {
 		return "index";
+	}
+
+	@PostMapping("/Login")
+	public String Co() {
+		return "liste-panier";
 	}
 
 	@GetMapping("/signin")
