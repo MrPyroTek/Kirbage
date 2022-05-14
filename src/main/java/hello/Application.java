@@ -14,9 +14,19 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@GetMapping("/hello")
-	public String sayHello(@RequestParam(value = "myName", defaultValue = "World") String name) {
+	@GetMapping("/Login")
+	public String Login() {
 		return "index";
 	}
+
+	@GetMapping("/signin")
+	public String SignIn() {
+		return "signin";
+	}
+	@GetMapping("/liste-panier")
+	public String liste_paniers() {
+		return "liste-panier";
+	}
+
 
 }

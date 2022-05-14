@@ -1,0 +1,46 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://thymeleaf.org/" lang="fr">
+  <head>
+	<meta charset="utf-8">
+	<title>Liste des paniers</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div>
+		<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Bienvenue sur Kirbage !</h2>
+					<form action="#" method="post">
+						Catégorie voulue : <input type="text" >
+						<input type="submit" name="ok">
+				</form>
+				</div>
+			</div>
+		<div class="row justify-content-center">
+		<table>
+			<tr>
+				<td>Description</td>
+				<td>Catégorie</td>
+				<td>Ville</td>
+				<td>Prix</td>
+			</tr>
+
+			<tr th:each="panier : ${paniers}">
+				<td th:utext="${panier.description}"></td>
+				<td th:utext="${panier.categorie}"></td>
+				<td th:utext="${panier.ville}"></td>
+				<td th:utext="${panier.prix"}></td>
+
+			</tr>
+
+		</table>
+		</div>
+	</div>
+
+</body>
+</html>
