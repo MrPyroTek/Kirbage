@@ -1,8 +1,5 @@
 package service;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
-
 import javax.ejb.Singleton;
 
 @Singleton
